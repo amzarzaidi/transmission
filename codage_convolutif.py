@@ -7,7 +7,7 @@ def add(a, b, c=0):
     return result % 2
 
 for i in range(2, len(entree)):
-    bit1 = add(int(entree[i-1]), int(entree[i]))
+    bit1 = add(int(entree[i-2]), int(entree[i]))
     bit2 = add(int(entree[i-2]), int(entree[i-1]), int(entree[i]))
     result.append(bit2)
     result.append(bit1)
